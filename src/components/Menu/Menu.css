@@ -1,0 +1,32 @@
+.menu-container{
+    width: 100vw;
+    max-height: 5vw;
+    padding: 1vw 4vw 1.5vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 5;
+    color: #fff;
+}
+.menu-scroll{
+    background-color: #000;
+}
+
+.menu-netflex{
+    width: 8vw;
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu-items-container{
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.menu-items{
+    margin: 0 20px;
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 0,
+        "item" : "Home",
+        "route" : "/user"
+    },
+    {
+        "id" : 1,
+        "item" : "Series",
+        "route" : "/series"
+    },
+    {
+        "id" : 2,
+        "item" : "Films",
+        "route" : "/films"
+    },
+    {
+        "id" : 3,
+        "item" : "New & Popular",
+        "route" : "/new-popular"
+    },
+    {
+        "id" : 4,
+        "item" : "My List",
+        "route" : "/my-list"
+    },
+    {
+        "id" : 5,
+        "item" : "Browse by languages",
+        "route" : "/browse-by-lang"
+    }
+]
