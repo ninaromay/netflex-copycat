@@ -27,10 +27,9 @@ const User : any = (data : any) =>{
 
     return(
         <>
-        <TopShadow />
         {/* LOADING SCREEN */}
+        <Menu/> 
         <div className="home-container">
-            <Menu/>
             <img className="home-billboard" src={billboard.bgImg} alt="hero-billboard" />
             <div className="home-billboard-info">
                 <img className="hero-billboard-logo" src={billboard.logo} alt="hero-logo" />
@@ -48,6 +47,10 @@ const User : any = (data : any) =>{
                 </div>
             </div>
         </div>
+        <>
+        
+        </>
+        <TopShadow />
         </>
     )
 }

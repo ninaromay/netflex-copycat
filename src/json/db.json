@@ -16,6 +16,7 @@
             "published" : 2019,
             "subType" : "",
             "isHD" : true,
+            "audioD" : false,
             "hasSubs": true,
             "warnings": [""],
             "director" : "Felipe Cano",
@@ -101,6 +102,7 @@
             "published" : 2024,
             "subType" : "Limited Series",
             "isHD" : true,
+            "audioD" : false,
             "hasSubs": true,
             "warnings": ["violence", "substances", "child abuse"],
             "director" : "",
@@ -165,6 +167,7 @@
             "published" : 2017,
             "subType" : "",
             "isHD" : true,
+            "audioD" : false,
             "hasSubs": false,
             "warnings": [""],
             "director" : "Hiromasa Yonebayashi",
@@ -178,65 +181,142 @@
     },
     {
         "id" : 3,
-        "slug" : "crime-diaries",
+        "slug" : "unfrosted",
+        "type" : "movie",
+        "name" : "Unfrosted",
+        "description": "A fruit-filled breakfast pastry will rise in this not-so-true story about the invention of the Pop-Tart starring Jerry Seinfeld in his directorial debut.",
+        "bgImg" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABexhA__PTn5A-W9GjrmaQHOjjiNglUibe9ql5o66DcgF4pKlhea85bxt7wzDBe4qA2LkADQJjyciqBmYppsadndhg7KAXoGmo8t8.webp?r=15b",
+        "logo" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABYSy0kXay2gCnM2azudUV54fLngCN4Yn9F1hr5TyqLWILdoeihr6d00ELOpaUGt7DHzuS9z8xAbPkLN2QYofcWzgBaD18WDkHbvdvyrdg6gv5k8oE2IklILGdtdYCLjW0PVS06BS6NNEI7z5371tH9lOrOuZRHPSZBHGa8KBWFPt7Ux4J4dLNw.webp?r=f54",
+        "position" : 6,
+        "ageLimit" : 13,
+        "moreInformation" : {
+            "infoBg": "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABWr_kNNRpNPeMaMYy6w8CQjjjCL8U9o9laLnqkS5Q-Z5o5C1ey-CRc4IW7fvsFyzJuxFNcTbfJK6kFpkeE2ci4MddhMLeo9BSRwP.webp?r=00b",
+            "infoLogo" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABY4n4wvRBncIKkZGt649cOZGnWazVJYGfKHMCxshoCJQ0N_jtotnAeoIMOPRdU19mbsXf3WsxXQRt3EJxPfAWKMAmE5WoohXRTGqfTQd0eA-GTCVw5b6STqvX5X3xn-Vyz9UkCOhsg0kntJBC7ToSL1s23czUyklfumIOPh_EJmLasYABtb-.webp?r=886",
+            "match" : "New",
+            "published" : 2024,
+            "subType" : "",
+            "isHD" : true,
+            "audioD" : true,
+            "hasSubs": true,
+            "warnings": ["suggestive content"],
+            "director" : "Jerry Seinfield",
+            "duration": "1h 36",
+            "cast" : ["Jerry Seinfield", "Melissa McCarthy", "Jim Gaffigan", "Hugh Grant", "Amy Schumer"],
+            "genres" : ["Comedy Films"],
+            "thisIs" : ["Nostalgic", "Goofy"]
+        },
+        "miniature":  "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVLJAcTYRV1oiiaCkU-E5GnQPgaIB3Th3PF_VQpTBTrAn-fJbTsCnq3K2KjSPrDQ-A844q_8Gwevk1MAya7cE0v7OjFVD0R2Dlyz121WoKpQd8bbuLE7hpClD67UpUcZAkx69-kyEOW-5U_b5ECtpfHTkNoZCKwi5E_QYTIH3uIAqX0y65ZjvEf9R9emfdCcYEBsRWOeYabcgGX5V1Irnwvj27S8uDfo7xoIT3jFHXovwj6lZOZHDc4abQS14I5w2opRrVC5jhkynjKOZeOc_Rcd4VGBhlyclP2vdOqhPD5PTftQO8zSujwQk5IDoMk3Wno0xMHWOGconvBrVbzZR6yVquDTzrFEhcVEAg-MS0KX6aiNK3I.jpg?r=3be",
+        "episodes": []
+    },
+    {
+        "id" : 4,
+        "slug" : "t-p-bon",
         "type" : "series",
-        "name" : "Deliver Me",
-        "description": "When children commit horrible crimes, who is to blame? No one is left untouched in this powerful drama about those we fail to protect.",
-        "bgImg" : "",
-        "logo" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABXreK7SQSjew5UMAimTH79oQcns0SnL-t-7yrHu2BjjF0yf8Wmfh19cPB1Co5Jtkg8G6oUc_Bu_ALXc744OOJiBzfz8norHsb9DQCH0dIeJsh9FR6VIW1DqP81Ww1h-07BAABgPz71cdoryOWm6LiW7sx-z6LnIlrxD7CvQe0zpEtjeXkr05.webp?r=d8a",
-        "position" : 3,
+        "name" : "T・P BON",
+        "description": "What if you could change history, even a tiny bit? Bon travels back in time and goes behind the scenes to save lives lost during historical events.",
+        "bgImg" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABQmI6H8_z5VkO3AfUVgevtffeQI9tQrVT8lLpUDIyOXl1DS3Gkio4QsL9zAKLPWq7dVo2RbDfQ2Q8KmeDv-JMMgZ_549kN7xoLZO.webp?r=774",
+        "logo" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABX0wOgimQljrfFNdpbdA9aSbsfjFk5uk-ZcWBr3dY3jHxQvVqxM0t2cvFGnmBg-av_BH8wU6TVxQL12LxRAxNpAitGME7Yuzv2kyUxffAaQM1S1cikYWh-gWpm_hodkFRpWiigCxOw6qfXSB3Gf0PSsk7G2fhIe-FKc2M_TbNjYgNOuxJLNkIQ.webp?r=9af",
+        "position" : 8,
         "ageLimit" : 16,
         "moreInformation" : {
-            "infoBg": "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABYcn_t_SV81plxc5R3bTGHTa3rXF2k4Jh_L722jkCvAkPjn8KS8UwjFc2zYEj35SIogiP3q5ENuEECBmd7kNMzR8tiO8_mJzPG80.webp?r=7fc",
-            "infoLogo" : "",
-            "match" : "94",
+            "infoBg": "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABREbBSD7iveMjcNqNeWMovNQnA2EZYeCZGJA4GhTKxdNpghidhG1oegt3Ji2WO8vLkmuJMPpVu5_LGOAtq0TwA1BtVz71cGLYnbm.webp?r=66f",
+            "infoLogo" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABfoml4V2xX5v0BxAN5sZOE8ZT5LxB3lbJD3G9FhHs0wdmfbHgA7hB-t-ZnCSEeIgRxLm0veiCzsqybfxqRn4gv5-9MhwYr-sZrXnhSbQiny2mMuOAWfOo_BqO4y8lHDSQDyvyQCf4jWXCMI1SGVfOpiTbrb-2zPWcDkzrv_bfpv5iBiIfR72.webp?r=853",
+            "match" : "New",
             "published" : 2024,
-            "subType" : "Limited Series",
+            "subType" : "",
             "isHD" : true,
+            "audioD" : false,
             "hasSubs": true,
-            "warnings": ["violence", "substances", "child abuse"],
+            "warnings": ["violence"],
             "director" : "",
             "duration": "",
-            "cast" : ["Olle Strand", "Yasir Hassan", "Ardalan Esmaili", "Yusra Warsama", "Abdirahman Mohamed"],
-            "genres" : ["Drama Programmes", "Swedish", "Crime Programmes", "Scandinavian TV", "Nordic TV Shows"],
-            "thisIs" : ["Gritty", "Dark", "Suspensful"]
+            "cast" : ["Akihisa Wakayama", "Atsumi Tanezaki", "Mamoru Miyano", "Tomoyo Kurosawa", "Yoko Hikasa", "Setsuo Ito", "Saho Shirasu", "Yasuyuki Kase"],
+            "genres" : ["Japanese", "Anime Series", "Anime Dramas", "Anime Sci-Fi", "TV Programmes Based on Manga"],
+            "thisIs" : ["Creative", "Imaginative", "Exciting"]
         },
         "miniature":  "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVLJAcTYRV1oiiaCkU-E5GnQPgaIB3Th3PF_VQpTBTrAn-fJbTsCnq3K2KjSPrDQ-A844q_8Gwevk1MAya7cE0v7OjFVD0R2Dlyz121WoKpQd8bbuLE7hpClD67UpUcZAkx69-kyEOW-5U_b5ECtpfHTkNoZCKwi5E_QYTIH3uIAqX0y65ZjvEf9R9emfdCcYEBsRWOeYabcgGX5V1Irnwvj27S8uDfo7xoIT3jFHXovwj6lZOZHDc4abQS14I5w2opRrVC5jhkynjKOZeOc_Rcd4VGBhlyclP2vdOqhPD5PTftQO8zSujwQk5IDoMk3Wno0xMHWOGconvBrVbzZR6yVquDTzrFEhcVEAg-MS0KX6aiNK3I.jpg?r=3be",
         "episodes": [
             {
-            "number" : 1,
-            "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTNxPs5thDyiO9rsHDLDtXGFrdsNX0UlXpFe8PNzYXsKNjwno9I5T9hZe39oIlb2Pi_MRPpqKvoih5-x9O6jJIQWViMvJo0QMx8apMsRufVgalkQPiLdMVfr.jpg?r=55f",
-            "tittle" : "What Have You Done?",
-            "shortDescription" : "When a boy escaping a local gang is shot, detective Farid sets his sights on small-time boss Mehdi, who is known to recruit minors.",
-            "duration" : "38m"
+                "number" : 1,
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABa_QCDPM_c4_qv_nl1z8Ee142FuGIbgM_3OJ_QyegCoX35IAPIk0OcfMgPhLtcvKhgk4reKOZMH0ELJZ9xlQsZJsa3q9pBpuTBQTwFqkenBIxWm19nJZxOFe.jpg?r=5a6",
+                "tittle" : "I Won't Be Erased!",
+                "shortDescription" : "While at his friend's home, Bon Namihira accidentally witnesses time travel in action and finds out that to keep it a secret, he must be erased.",
+                "duration" : "29m"
             },
             {
                 "number" : 2,
-                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTTtPlH1wTYZZLSM5zz4jJHyMaqt_kbFQ3Z7b_8soLFyHt5zLnyvUjQ_A2ax1QVL7BD7V-X44Yu5u72bp_u8_5PfEVWOwKnvYoL01fU01gnNAtoJk-XCHSMu.jpg?r=927",
-                "tittle" : "Why is My Son Dead?",
-                "shortDescription" : "Mehdi threatens Billy's brother. Dogge discovers a target on his back when he runs into a familiar face at the youth detention center.",
-                "duration" : "45m"
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABe-O3UqC-XRrXyTTSfrJg2rsLH_Qxt-Lvo0zwlFOGQaSrpA0G6AYLDEl0Y661oKH5NoJeZw5TieZam3yda0SfBtpINAjgf6lz2urSm-tAXJy4GS6x2rd_XQD.jpg?r=cbd",
+                "tittle" : "T・P Apprentice",
+                "shortDescription" : "After narrowly escaping erasure, Bon must learn the ropes of being a Time Patrol agent. His first mission: 1947 Tokyo in the midst of Typhoon Kathleen.",
+                "duration" : "26m"
             },
             {
                 "number" : 3,
-                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTK9Ih6KB9yVBKMppnwy6XMNz1l159Br4dCzGOVW7bf-ZGS3yuj4Tqpz1r-q4PvOBxtSDjfs9pizaAlcogemMiApjgQ3tiBP08AaAngY_5CVSk-kqJ4bhfCt.jpg?r=3ec",
-                "tittle" : "You Haven't Helped Anyone Here",
-                "shortDescription" : "Farid struggles to keep Mehdi off the streets. Dogge turns to drugs to ease his guilt, which results in a violent encounter.",
-                "duration" : "48m"
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABZZQny6gDv6buCaylbaRq_fo304SH6V8ThtSFwl969IVM--QOD7g75lAa-Ad_oW7hJs7xyFQLUuy466WfvC8o_0Hbzpzh5k6Nkpmo8ZoHAK-nI1mfI4pTzR6.jpg?r=5eb",
+                "tittle" : "The Secret of the Pyramid",
+                "shortDescription" : "In his next mission, Bon is off to the very distant past of 2592 B.C. Egypt, where he works with Ream to save the innocent Thoth from being buried alive.",
+                "duration" : "31m"
             },
             {
                 "number" : 4,
-                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABdOJSi6_IUx42dxbpgJIydgwvLHZX0jcBbGD89SXdxWzZWHlUl4CSMA1oAfJfeojCAXi6DlF1UmP4Tvr9A1FIxD8YccBBLlzOGTS50GV40HkQyNWSD9df09t.jpg?r=694",
-                "tittle" : "In This Life You're a Grown-up",
-                "shortDescription" : "Tusse confesses to his role in his brother's death. Farid crosses a line as he chases after the gun used in the killing.",
-                "duration" : "45m"
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABaLLcINeG4jlkxSnKFKi-9SukHQasqkMTE5RhCYHMU02wU9eL9-OIwLLlbd4Sx2TCE0ygV_MIlsHCIg10t9K23UHG8lP9xPdypQFPtQXEPapWAA9D2I4QqIy.jpg?r=b7d",
+                "tittle" : "An Ancient Man Crosses the Pacific",
+                "shortDescription" : "After getting an earful from Ream about flaunting his new gear, Bon and team travel to 800 B.C. where they assist an ancestor's risky sea voyage to Japan.",
+                "duration" : "28m"
             },
             {
                 "number" : 5,
-                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABdznfUEICvDhuCU9E_ppfF1AHU14UHRLGLtfIVUkTfFoolXdNd93rJzh8OnBUW_-WnOn31hYsALwSZEwfr4Z1GCcH24Be7czoK3t6jPSBaAqRVkAeMfuP2Vf.jpg?r=9fa",
-                "tittle" : "You Can't Protect Me",
-                "shortDescription" : "When the truth comes to light, Leila makes a decision for her family that transforms Mehdi's fate.",
-                "duration" : "45m"
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbjwlLlxCjGLvF4VTZLlWbnDI1hcZS2jOkR0TydbqudXJLkFz1tDpC79PTMDzZstX3iO9zKhKEyH3m7TyrB2YYj2tZYba2sqb0iH6Mnu-XmFiVCIWg-4hieA.jpg?r=ccd",
+                "tittle" : "Witch Hunt",
+                "shortDescription" : "Bon and Ream go back 350 years, arriving in Southern France to prevent the torture and death of Celine, a potential victim of Europe's witch hunts.",
+                "duration" : "27m"
+            },
+            {
+                "number" : 6,
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABd_XhkjeNGAkiS6vna9kJNgUF8KVsmsN4JHLrkbURlXnHAC1MR1jMar1eORNpNqlzznF5HUNyGLesd5C8nzzzaX8xdoVWjFyVxNZATVbXz7PV_TMxROz2qc_.jpg?r=2f5",
+                "tittle" : "I Won't Be Erased!",
+                "shortDescription" : "While on a mission in A.D. 628 at the Tian Shan Mountains, Bon realizes that the group they're trailing inspired the epic \"Journey to the West\" tale.",
+                "duration" : "28m"
+            },
+            {
+                "number" : 7,
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABRtvkewJTvNNQPUGcRxuCtwxVHWu_LyhMuqYDiZiXVxx4bmWPi57LJ1cPquzPSt-UZechOisL1Tf0Sx5juKbh0foway51knzBHDYKb3IYaq3PZ5RGqn9B6FR.jpg?r=903",
+                "tittle" : "The Dark Labyrinth",
+                "shortDescription" : "In 1500 B.C. on Crete, Bon and Ream experience the dire consequences of neglecting their Time Boats. Will they be able to save their targets in time?",
+                "duration" : "28m"
+            },
+            {
+                "number" : 8,
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABSIgX8qEkf3_BuCd_TH6Xl4GoTKUSDTJxJCEJu_Z9UR2YynJ4DEbwAzGlfMOle9RVB_zQmwQ1-6TeECsN4J8WYClUmPR5v6vYzx2YNRWv1ISk4WaGGeqVYFH.jpg?r=3e9",
+                "tittle" : "The Beautiful Girl on the Battlefield",
+                "shortDescription" : "Tasked with saving only one person during the Battle of Okinawa in 1945, Bon and Ream wrestle with the harsh reality of the Time Patrol's limits.",
+                "duration" : "26m"
+            },
+            {
+                "number" : 9,
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABafsjShfMbGZuriHeBl_QJ2nok802WZ6y2Yd6tqd-lapcIdm6PmEi4TIT-5JYoiX5FWNsA9jsFLg0BMHE3wAOl4GUcnCKoM5gcEtpEiTm3qQx1YRAUIl19zN.jpg?r=d11",
+                "tittle" : "Riding a Dinosaur on Vacation",
+                "shortDescription" : "The crew takes a vacation to the late Jurassic period but ends up thwarting a poacher whose unrepentant hunting might threaten all of humanity.",
+                "duration" : "27m"
+            },
+            {
+                "number" : 10,
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABXh-e5FAVt4M1Ghc-bKiyAcDodrVLTXOuSMpUgE_-hyEj9L8IEGGKpjPUq3OcvaE2SJy8pmN3XmNlbqbxCaOMS9jDUeRjeUi3YtfDdAGwlgCas4yI4hiIMlO.jpg?r=7e6",
+                "tittle" : "Gunfight Near the O.K. Corral",
+                "shortDescription" : "Bon and Ream search for clues to their next target's identity in Tombstone, USA, where they must blend in with the 19th-century gunslinging crowd.",
+                "duration" : "27m"
+            },            {
+                "number" : 11,
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABcoQys6gMMrDYjdG_aanZM12l7FhGu34OUZMTKrp6Q4C6XHo5sEjhRtXvxSvlz-2M3PdM-q_0ZZy26EPXgVaSTE_FOSkFFPolMedzSCjEZZ1if3LzsPaGEWx.jpg?r=9a3",
+                "tittle" : "The Marathon Battle",
+                "shortDescription" : "The crew warps to 490 B.C., saving lives at the Battle of Marathon. Later, Bon carelessly changes history and must take the place of an important herald.",
+                "duration" : "29m"
+            },            {
+                "number" : 12,
+                "caption" : "https://occ-0-867-38.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABVnVt7pHWYd1cPrDdNgn5posHC7apClQfq1ssuQdkTPSFO-t6qxWyijy9LJW3KM0J62yPLvNSMNt7b4sXhhS6PaZu_CqMhLD7F6vTwjkIpDaedg691p_42w5.jpg?r=347",
+                "tittle" : "Hyperspace Castaway",
+                "shortDescription" : "Bon and Ream become stranded in the future while on a dangerous mission to rescue a \"Time Tripper.\" Will they be able to find their way back home?",
+                "duration" : "28m"
             }
         ]
     }
