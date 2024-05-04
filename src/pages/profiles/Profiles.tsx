@@ -2,14 +2,14 @@
 import './Profiles.css';
 
 //HOOKS
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 //COMPONENTS
 import User from '../user/User';
 
 //JSON
 import db from "../../json/db.json";
-import TopShadow from '../../components/TopShadow';
+import TopShadow from '../../components/Shadows/TopShadow';
 
 const Profiles : any = (data : any) =>{
     const profiles : ProfileType[] = data.data;
@@ -19,23 +19,32 @@ const Profiles : any = (data : any) =>{
     const handleProfile = (id : number) =>{
       setProfiled(true);
       setProfileId(id);
+      localStorage.setItem("profile", `${profileId}`);
+      console.log("localS: " + localStorage)
+
     }
+
+    useEffect(() => {
+      setInterval(() =>{
+        localStorage.clear();
+    }, 1000000);
+    });
 
   return (
     <>
     <TopShadow />
     {!profiled ?
         <div className='profiles-container'>
-        <p className='profile-question'>Who are you? Choose your profile</p>
-        <ul className='profiles'>
-            {profiles.map((profile : ProfileType) => 
-                <li key={profile.id} className='profile'>
-                    <img className='profile-img' src={profile.img} alt={`logo-${profile.id + 1}`} onClick={() => handleProfile(profile.id)} />
-                    <p className='profile-user'>{profile.userName}</p>
-                    {profile.isLocked ? <img className='lock' src="src/assets/profiles/lock.svg" alt="lock" /> : ""}
-                </li>
-            )}
-        </ul>
+          <p className='profile-question'>Who are you? Choose your profile</p>
+          <ul className='profiles'>
+              {profiles.map((profile : ProfileType) => 
+                  <li key={profile.id} className='profile'>
+                      <img className='profile-img' src={profile.img} alt={`logo-${profile.id + 1}`} onClick={() => handleProfile(profile.id)} />
+                      <p className='profile-user'>{profile.userName}</p>
+                      {profile.isLocked ? <img className='lock' src="src/assets/profiles/lock.svg" alt="lock" /> : ""}
+                  </li>
+              )}
+          </ul>
         </div>
         : <User db={db} user={profiles[profileId]} />
     }

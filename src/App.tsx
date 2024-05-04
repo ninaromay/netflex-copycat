@@ -10,17 +10,20 @@ import User from './pages/user/User.tsx';
 
 //JSON
 import db from "./json/db.json";
+import { useState } from 'react';
 
 function App() {
-  const defaultUser : number = 0;
+  const [userP, setUserP] = useState(0)
+  // localStorage.getItem("profile")
+  localStorage.profile ? setUserP(localStorage.profile) : console.log(0)
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<MainPage/>} />
-        <Route path='/user' element={<User db={db} user={defaultUser}/>} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path='/' element={<MainPage />} />
+      <Route path='/user' element={<User db={db} user={userP}/>} />
+    </Routes>
+  </BrowserRouter>
   )
 }
 

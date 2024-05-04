@@ -1,56 +1,60 @@
 // CSS
-import Menu from "../../components/Menu/Menu";
-import TopShadow from "../../components/TopShadow";
 import "./User.css"
 
+// COMPONENTS
+import CardSlider from "../../components/CardSlider/CardSlider";
+import Menu from "../../components/Menu/Menu";
+import TopShadow from "../../components/Shadows/TopShadow";
+import BottomShadow from "../../components/Shadows/BottomShadow";
+import Billboard from "../../components/Card/Billboard";
+
 // HOOKS
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+// TOOLS
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const User : any = (data : any) =>{
     const db : DB[] = data.db;
     const user : ProfileType = data.user;
 
+    // Change background on a Timer
     const [hero, setHero] = useState(0);
-    const heroHandler = () => {
-        console.log(hero)
-        setHero(hero + 1)
-        console.log(hero)
-        user.ageLimit < db[hero+1].ageLimit ? heroHandler() : setHero(hero);    
+    const heroHandler = (hero : number) => {
+        if(hero >= db.length - 1){
+            return setHero(0)
+        }
+
+        if (user.ageLimit < db[hero].ageLimit){
+            heroHandler(hero + 1)
+        }
+        setHero(hero + 1);
     }
+    useEffect(() => {
+        setInterval(() =>{
+            window.location.replace("http://localhost:5173/");
+        }, 1000000);
+    });
 
-    const billboard : any = db[0];
+    const billboard : any = db[hero];
 
-    const svg : SvgGroup = {
-        play:   "src/assets/user/media/play.svg",
-        info:   "src/assets/user/media/moreInfo.svg",
+    if (user.ageLimit < billboard.ageLimit){
+        heroHandler(hero)
     }
 
     return(
         <>
-        {/* LOADING SCREEN */}
-        <Menu/> 
-        <div className="home-container">
-            <img className="home-billboard" src={billboard.bgImg} alt="hero-billboard" />
-            <div className="home-billboard-info">
-                <img className="hero-billboard-logo" src={billboard.logo} alt="hero-logo" />
-                {billboard.type === "series" ? <p className="home-billboard-watch">Watch the {billboard.moreInformation.subType ? billboard.moreInformation.subType : billboard.type}</p> : ""}
-                 <p className="home-billboard-description">{billboard.description}</p>
-                <div className="home-billboard-btn-group">
-                    <span className="home-billboard-btn home-play-btn">
-                        <img src={svg.play} alt="svg-play"/>
-                        <span>Play</span>
-                    </span>
-                    <span className="home-billboard-btn home-info-btn">
-                        <img src={svg.info} alt="svg-info"/>
-                        <span>More Info</span>
-                    </span>
-                </div>
+            <Menu />
+            {/* LOADING SCREEN */}
+            <div className="home-container">
+                <BottomShadow />
+                <Billboard billboard={billboard}/>
             </div>
-        </div>
-        <>
-        
-        </>
-        <TopShadow />
+            <div className="home-slider-container">
+                <CardSlider slider={db} title={"New on Netflex"}/>
+                <CardSlider slider={db} title={"New on Netflex"}/>
+            </div>
+            <TopShadow />
         </>
     )
 }
@@ -91,7 +95,7 @@ type MoreInformation = {
 type Episodes ={
     number : number;
     caption : string;
-    tittle : string;
+    title : string;
     shortDescription : string;
     duration : string ;
 }
@@ -102,9 +106,4 @@ type ProfileType = {
     ageLimit: string;
     img : string;
     isLocked : boolean;
-}
-
-type SvgGroup = {
-    play: string;
-    info: string;
 }

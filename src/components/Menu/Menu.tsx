@@ -18,8 +18,9 @@ const Menu : any = () => {
 
     const [y, setY] = useState(window.scrollY);
     useEffect(() => {
-        const handleNavigation = (e) => {
-          // Scroll direction logic
+        const handleNavigation = (e : any) => {
+          e.preventDefault();
+          setY(window.scrollY);
         };
       
         window.addEventListener("scroll", handleNavigation);
@@ -28,7 +29,6 @@ const Menu : any = () => {
       }, [y]);
 
     const menu : MenuType[] = menuList; 
-    console.log(y)
 
     return(
         <div className={`menu-container ${y > 0? 'menu-scroll': ''}`}>
