@@ -8,7 +8,7 @@ import menuList from "./../../json/menu.json";
 import { useEffect, useState } from 'react';
 
 // COMPONENTS
-import TopShadow from '../TopShadow';
+import TopShadow from '../Shadows/TopShadow';
 
 const Menu : any = () => {
     const menuImgs : MenuImgs = {

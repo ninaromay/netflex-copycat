@@ -4,12 +4,8 @@
     position: relative;
     z-index: 0;
     color: #ffffff;
-<<<<<<< HEAD
-=======
 }
 
-.home-slider-container{
-    margin-top: -7vw;
-    padding: 0 4vw;
->>>>>>> 3742da0d39d3fef5238a4ab419c6f30ab1c033e4
+.sliders{
+    padding:  0 60px;
 }

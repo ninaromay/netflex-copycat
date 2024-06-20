@@ -1,7 +1,7 @@
 .menu-container{
     width: 100vw;
-    height: 1vw;
-    padding: 1vw 4vw 1.5vw;
+    height: 68px;
+    padding: 0 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,8 +19,8 @@
 }
 
 .menu-netflex{
-    width: 6vw;
-    margin-right: 20px;
+    width: 7vw;
+    margin-right: 30px;
     position: relative;
 }
 
@@ -32,7 +32,7 @@
 
 .menu-items{
     margin: 0 15px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 @keyframes scrollMenu {
