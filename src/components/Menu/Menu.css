@@ -1,6 +1,6 @@
 .menu-container{
     width: 100vw;
-    max-height: 5vw;
+    height: 1vw;
     padding: 1vw 4vw 1.5vw;
     position: fixed;
     top: 0;
@@ -12,11 +12,14 @@
     color: #fff;
 }
 .menu-scroll{
-    background-color: #000;
+    animation: scrollMenu;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    background-color: rgba(20, 20, 20, 1);
 }
 
 .menu-netflex{
-    width: 8vw;
+    width: 6vw;
     margin-right: 20px;
     position: relative;
 }
@@ -28,5 +31,11 @@
 }
 
 .menu-items{
-    margin: 0 20px;
+    margin: 0 15px;
+    font-size: 13px;
 }
+
+@keyframes scrollMenu {
+    0% {    background-image: linear-gradient(180deg, rgba(20, 20, 20, 0) 10%, transparent);}
+    100% {    background-image: linear-gradient(180deg, rgba(20, 20, 20, 1) 90%, transparent);}
+  }

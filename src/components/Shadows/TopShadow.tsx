@@ -2,7 +2,7 @@ import "./TopShadow.css"
 
 function TopShadow () {
     return(
-        <div className="shadow"></div>
+        <div className="shadowt"></div>
     )
 }
 

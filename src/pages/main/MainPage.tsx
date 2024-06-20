@@ -11,6 +11,7 @@ import profilesJson from "../../json/profile.json";
 import db from "../../json/db.json";
 
 function MainPage() {
+<<<<<<< HEAD
   const profiles : ProfileType[] = profilesJson;
   const [page, setPage] = useState('user');
   const [profiled, setProfiled] = useState(false);
@@ -20,6 +21,9 @@ function MainPage() {
     setProfiled(true);
     setProfiledId(id);
   }
+=======
+  const [logged, setLogged] = useState(true);
+>>>>>>> 3742da0d39d3fef5238a4ab419c6f30ab1c033e4
 
   return (
     <>

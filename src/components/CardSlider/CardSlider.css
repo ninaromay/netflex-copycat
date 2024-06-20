@@ -1,0 +1,17 @@
+.card-slider-container{
+    width: 100vw;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 3vw;
+    overflow: scroll;
+}
+
+.card-slider-title{
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-slider{
+    display: flex;
+}

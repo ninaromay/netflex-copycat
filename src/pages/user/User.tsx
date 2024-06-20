@@ -1,17 +1,33 @@
 // CSS
+<<<<<<< HEAD
 import "./User.css";
 
 // COMPONENTS
 import Billboard from "../../components/Billboard/Billboard.tsx";
+=======
+import "./User.css"
+>>>>>>> 3742da0d39d3fef5238a4ab419c6f30ab1c033e4
+
+// COMPONENTS
+import CardSlider from "../../components/CardSlider/CardSlider";
+import Menu from "../../components/Menu/Menu";
+import TopShadow from "../../components/Shadows/TopShadow";
+import BottomShadow from "../../components/Shadows/BottomShadow";
+import Billboard from "../../components/Card/Billboard";
 
 // HOOKS
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+// TOOLS
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const User : any = (data : any) =>{
     const db : DB[] = data.db;
     const user : ProfileType = data.user;
 
+    // Change background on a Timer
     const [hero, setHero] = useState(0);
+<<<<<<< HEAD
     const heroHandler = (hero : number) : any => {
         const heroSum = hero + 1;
         setHero(heroSum);
@@ -20,21 +36,56 @@ const User : any = (data : any) =>{
         } else {
             setHero(heroSum);    
         }
-    }
+=======
+    const heroHandler = (hero : number) => {
+        if(hero >= db.length - 1){
+            return setHero(0)
+        }
 
+        if (user.ageLimit < db[hero].ageLimit){
+            heroHandler(hero + 1)
+        }
+        setHero(hero + 1);
+>>>>>>> 3742da0d39d3fef5238a4ab419c6f30ab1c033e4
+    }
+    useEffect(() => {
+        setInterval(() =>{
+            window.location.replace("http://localhost:5173/");
+        }, 1000000);
+    });
+
+<<<<<<< HEAD
     if(user.ageLimit < db[hero].ageLimit){
         heroHandler(hero);
     }
+=======
+    const billboard : any = db[hero];
+>>>>>>> 3742da0d39d3fef5238a4ab419c6f30ab1c033e4
 
-    const svg : SvgGroup = {
-        play:   "src/assets/user/media/play.svg",
-        info:   "src/assets/user/media/moreInfo.svg",
+    if (user.ageLimit < billboard.ageLimit){
+        heroHandler(hero)
     }
 
     return(
+<<<<<<< HEAD
         <div className="user-container">
             <Billboard billboard={db[hero]} svg={svg}/>
         </div>
+=======
+        <>
+            <Menu />
+            {/* LOADING SCREEN */}
+            <div className="home-container">
+                <BottomShadow />
+                <Billboard billboard={billboard}/>
+            </div>
+            <div className="home-slider-container">
+                <CardSlider slider={db} title={"New on Netflex"}/>
+                <CardSlider slider={db} title={"New on Netflex"}/>
+            </div>
+            <TopShadow />
+        </>
+>>>>>>> 3742da0d39d3fef5238a4ab419c6f30ab1c033e4
     )
 }
 
@@ -74,7 +125,7 @@ type MoreInformation = {
 type Episodes ={
     number : number;
     caption : string;
-    tittle : string;
+    title : string;
     shortDescription : string;
     duration : string ;
 }
@@ -85,9 +136,4 @@ type ProfileType = {
     ageLimit: string;
     img : string;
     isLocked : boolean;
-}
-
-type SvgGroup = {
-    play: string;
-    info: string;
 }

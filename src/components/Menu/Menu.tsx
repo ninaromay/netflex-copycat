@@ -21,8 +21,9 @@ const Menu : any = () => {
 
     const [y, setY] = useState(window.scrollY);
     useEffect(() => {
-        const handleNavigation = (e) => {
-          // Scroll direction logic
+        const handleNavigation = (e : any) => {
+          e.preventDefault();
+          setY(window.scrollY);
         };
         window.addEventListener("scroll", handleNavigation);
         return () => window.removeEventListener("scroll", handleNavigation);
