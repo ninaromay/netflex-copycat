@@ -1,7 +1,8 @@
 // CSS
-import Menu from "../../components/Menu/Menu";
-import TopShadow from "../../components/TopShadow";
-import "./User.css"
+import "./User.css";
+
+// COMPONENTS
+import Billboard from "../../components/Billboard/Billboard.tsx";
 
 // HOOKS
 import { useState } from "react";
@@ -11,14 +12,19 @@ const User : any = (data : any) =>{
     const user : ProfileType = data.user;
 
     const [hero, setHero] = useState(0);
-    const heroHandler = () => {
-        console.log(hero)
-        setHero(hero + 1)
-        console.log(hero)
-        user.ageLimit < db[hero+1].ageLimit ? heroHandler() : setHero(hero);    
+    const heroHandler = (hero : number) : any => {
+        const heroSum = hero + 1;
+        setHero(heroSum);
+        if(user.ageLimit < db[heroSum].ageLimit){
+            heroHandler(heroSum);
+        } else {
+            setHero(heroSum);    
+        }
     }
 
-    const billboard : any = db[0];
+    if(user.ageLimit < db[hero].ageLimit){
+        heroHandler(hero);
+    }
 
     const svg : SvgGroup = {
         play:   "src/assets/user/media/play.svg",
@@ -26,32 +32,9 @@ const User : any = (data : any) =>{
     }
 
     return(
-        <>
-        {/* LOADING SCREEN */}
-        <Menu/> 
-        <div className="home-container">
-            <img className="home-billboard" src={billboard.bgImg} alt="hero-billboard" />
-            <div className="home-billboard-info">
-                <img className="hero-billboard-logo" src={billboard.logo} alt="hero-logo" />
-                {billboard.type === "series" ? <p className="home-billboard-watch">Watch the {billboard.moreInformation.subType ? billboard.moreInformation.subType : billboard.type}</p> : ""}
-                 <p className="home-billboard-description">{billboard.description}</p>
-                <div className="home-billboard-btn-group">
-                    <span className="home-billboard-btn home-play-btn">
-                        <img src={svg.play} alt="svg-play"/>
-                        <span>Play</span>
-                    </span>
-                    <span className="home-billboard-btn home-info-btn">
-                        <img src={svg.info} alt="svg-info"/>
-                        <span>More Info</span>
-                    </span>
-                </div>
-            </div>
+        <div className="user-container">
+            <Billboard billboard={db[hero]} svg={svg}/>
         </div>
-        <>
-        
-        </>
-        <TopShadow />
-        </>
     )
 }
 

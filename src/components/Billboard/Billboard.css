@@ -1,0 +1,82 @@
+.billboard{
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.billboard-info{
+    width: 40%;
+    max-height: 80%;
+    min-height: 10%;
+    position: absolute;
+    z-index: 1;
+    bottom: 8vw;
+    left: 4vw;
+}
+
+.hero-billboard-logo{
+    max-width: 80%;
+    max-height: 40%;
+    margin: 20px 0;
+}
+
+.billboard-watch{
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.billboard-description{
+    margin: 15px 0;
+    line-height: 28px;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.billboard-btn-group{
+    display: flex;
+}
+
+.billboard-btn{
+    min-width: 100px;
+    height: 50px;
+    margin-right: 20px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+.info-btn:hover{
+    background-color: rgba(109, 109, 110, 0.5);
+}
+
+.play-btn:hover{
+    background-color: rgba(100%, 100%, 100%, 0.7);
+}
+
+.billboard-btn img{
+    max-width: 25px;
+    margin-right: 15px;
+}
+
+.info-btn{
+    width: 150px;
+    background-color: rgba(109, 109, 110, 0.7);
+    color: #fff;
+    font-weight: 400;
+}
+
+.play-btn{
+    background-color: #fff;
+    color: #000;
+}
+
+.play-btn img{
+    color: #000;
+}

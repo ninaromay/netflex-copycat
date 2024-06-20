@@ -7,6 +7,9 @@ import menuList from "./../../json/menu.json";
 // HOOKS
 import { useEffect, useState } from 'react';
 
+// COMPONENTS
+import TopShadow from '../TopShadow';
+
 const Menu : any = () => {
     const menuImgs : MenuImgs = {
         netflex: "src/assets/netflex-logo-full.png",
@@ -21,16 +24,15 @@ const Menu : any = () => {
         const handleNavigation = (e) => {
           // Scroll direction logic
         };
-      
         window.addEventListener("scroll", handleNavigation);
-      
         return () => window.removeEventListener("scroll", handleNavigation);
       }, [y]);
 
     const menu : MenuType[] = menuList; 
-    console.log(y)
 
     return(
+        <>
+        <TopShadow />
         <div className={`menu-container ${y > 0? 'menu-scroll': ''}`}>
             <img className='menu-netflex' src={menuImgs.netflex} alt="netflex-logo" />
             <ul className='menu-items-container'>
@@ -41,6 +43,7 @@ const Menu : any = () => {
                 )}
             </ul>
         </div>
+        </>
     )
 }
 
